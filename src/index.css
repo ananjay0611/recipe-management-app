@@ -1,0 +1,26 @@
+:root {
+  --ink: #1d2b4a;
+  --muted: #6b7385;
+  --accent: #f2542d;
+  --accent-dark: #d93f1a;
+  --line: #ece7e1;
+  --bg: #ffffff;
+  --soft: #fff6ef;
+  --radius: 14px;
+  --serif: "Playfair Display", Georgia, serif;
+  --sans: "Inter", system-ui, sans-serif;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: var(--sans);
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.6;
+}
+h1, h2, h3 { font-family: var(--serif); line-height: 1.15; margin: 0 0 .5rem; }
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; display: block; }
+:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.container { width: min(1100px, 92%); margin-inline: auto; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; scroll-behavior: auto !important; } }
